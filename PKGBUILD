@@ -3,7 +3,7 @@
 
 pkgname=uboot-soquartz-cm4
 pkgver=2022.01.rc4
-pkgrel=1
+pkgrel=2
 #_tfaver=2.5
 pkgdesc="U-Boot for SoQuartz CM4"
 arch=('aarch64')

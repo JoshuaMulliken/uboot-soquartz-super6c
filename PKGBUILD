@@ -54,7 +54,7 @@ build() {
   cd u-boot-quartz64-quartz64
 
   echo -e "\nBuilding U-Boot for Pine64 SoQuartz CM4...\n"
-  make quartz64-a-rk3566_defconfig
+  make quartz64-b-rk3566_defconfig
 
   update_config 'CONFIG_IDENT_STRING' '" Manjaro Linux ARM"'
   make EXTRAVERSION=-${pkgrel}

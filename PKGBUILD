@@ -16,15 +16,15 @@ install=${pkgname}.install
 source=( #"ftp://ftp.denx.de/pub/u-boot/u-boot-${pkgver/rc/-rc}.tar.bz2" #for mainline release
         "https://gitlab.com/pgwipeout/u-boot-quartz64/-/archive/quartz64/u-boot-quartz64-quartz64.tar.gz" #Peter Geis' u-boot based on Mainline
         "rk3568_bl31_v1.28.elf::https://github.com/JeffyCN/rockchip_mirrors/blob/6186debcac95553f6b311cee10669e12c9c9963d/bin/rk35/rk3568_bl31_v1.28.elf?raw=true"
-        "rk3568_ddr_1560MHz_v1.11.bin::https://github.com/JeffyCN/rockchip_mirrors/blob/47404a141a1acb7555906b5e3b097b5f1045cc21/bin/rk35/rk3568_ddr_1560MHz_v1.11.bin?raw=true")
+        "rk3568_ddr_1560MHz_v1.13.bin::https://github.com/JeffyCN/rockchip_mirrors/blob/ddf03c1d80b33dac72a33c4f732fc5849b47ff99/bin/rk35/rk3568_ddr_1056MHz_v1.13.bin?raw=true")
         #"https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git/snapshot/trusted-firmware-a-$_tfaver.tar.gz") #for TF-A release
 sha256sums=('2d1dcaa3dfdd7684e69402a9cd73440c5ab4dfddb15e0c05178da3a5b415647c'
             '67bf19566fb646e2f1f55b7fbf084f0d71b59b875a19a077e638b95adf1b254a'
-            '9201bcd2ac57f3d2d69c20edea3c528b5749beac4ccf99190745e0d5ae46320b')
+            '6f165b37640eb876b5f41297bcce6451eb8a86fa56649633d4aca76047136a36')
 
 prepare() {
   mv rk3568_bl31_v1.28.elf u-boot-quartz64-quartz64/bl31.elf
-  mv rk3568_ddr_1560MHz_v1.11.bin u-boot-quartz64-quartz64/ram_init.bin
+  mv rk3568_ddr_1560MHz_v1.13.bin u-boot-quartz64-quartz64/ram_init.bin
   #cd u-boot-${pkgver/rc/-rc}
 }
 

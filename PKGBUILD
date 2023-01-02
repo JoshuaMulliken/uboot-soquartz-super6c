@@ -1,11 +1,11 @@
 # U-Boot: Quartz64 (Mainline with Rockchip blobs)
 # Maintainer: Dan Johansen <strit@manjaro.org>
 
-pkgname=uboot-soquartz-cm4
+pkgname=uboot-soquartz-super6c
 pkgver=2022.01.rc4
 pkgrel=3
 #_tfaver=2.5
-pkgdesc="U-Boot for SoQuartz CM4"
+pkgdesc="U-Boot for SoQuartz Super6c"
 arch=('aarch64')
 url='http://www.denx.de/wiki/U-Boot/WebHome'
 license=('GPL')
